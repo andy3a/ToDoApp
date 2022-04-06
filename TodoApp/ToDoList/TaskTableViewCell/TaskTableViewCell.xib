@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskTableViewCell" customModule="TodoApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TaskTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" rowHeight="134" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="TodoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5y-wC-CGm">
+                        <rect key="frame" x="10" y="40" width="373" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Deadline:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8S-wD-K0V">
+                        <rect key="frame" x="10" y="93" width="72" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee0-zI-who">
+                        <rect key="frame" x="92" y="93" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-Yu-tvc" customClass="PaddingLabel" customModule="TodoApp" customModuleProvider="target">
+                        <rect key="frame" x="350" y="12" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="L5y-wC-CGm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="054-8t-3ZT"/>
+                    <constraint firstAttribute="trailing" secondItem="L5y-wC-CGm" secondAttribute="trailing" constant="10" id="7b5-Oe-l0X"/>
+                    <constraint firstItem="H8S-wD-K0V" firstAttribute="centerY" secondItem="ee0-zI-who" secondAttribute="centerY" id="AUJ-Ke-jes"/>
+                    <constraint firstItem="L5y-wC-CGm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="FW2-be-EHa"/>
+                    <constraint firstItem="Uz5-Yu-tvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Una-zC-DaQ"/>
+                    <constraint firstItem="L5y-wC-CGm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Uvm-jt-cn5"/>
+                    <constraint firstItem="H8S-wD-K0V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="V39-ND-yGw"/>
+                    <constraint firstItem="ee0-zI-who" firstAttribute="leading" secondItem="H8S-wD-K0V" secondAttribute="trailing" constant="10" id="Wp0-TL-3k9"/>
+                    <constraint firstAttribute="trailing" secondItem="Uz5-Yu-tvc" secondAttribute="trailing" constant="12" id="aPk-bu-xdj"/>
+                    <constraint firstAttribute="bottom" secondItem="H8S-wD-K0V" secondAttribute="bottom" constant="20" id="g4M-Xj-bV2"/>
+                    <constraint firstItem="H8S-wD-K0V" firstAttribute="top" secondItem="L5y-wC-CGm" secondAttribute="bottom" constant="10" id="m18-QW-9Ca"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deadlineDate" destination="ee0-zI-who" id="1CW-E9-Dng"/>
+                <outlet property="nameLabel" destination="L5y-wC-CGm" id="JOc-bz-RfH"/>
+                <outlet property="typeLabel" destination="Uz5-Yu-tvc" id="y4d-KY-Mwb"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="117.85714285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
